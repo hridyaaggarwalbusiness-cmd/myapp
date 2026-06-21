@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyApp</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { min-height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(135deg, #0f2027, #203a43, #2c5364); font-family: 'Segoe UI', sans-serif; color: #fff; }
+    .card { background: rgba(255,255,255,0.08); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.15); border-radius: 20px; padding: 3rem 4rem; text-align: center; box-shadow: 0 8px 32px rgba(0,0,0,0.3); max-width: 480px; }
+    h1 { font-size: 3rem; margin-bottom: 0.5rem; }
+    p { font-size: 1.1rem; opacity: 0.75; margin-bottom: 2rem; }
+    .badge { display: inline-block; background: linear-gradient(90deg, #43e97b, #38f9d7); color: #0f2027; font-weight: 700; padding: 0.4rem 1.2rem; border-radius: 999px; font-size: 0.9rem; }
+    .dots { margin-top: 2.5rem; display: flex; gap: 0.5rem; justify-content: center; }
+    .dot { width: 10px; height: 10px; border-radius: 50%; background: rgba(255,255,255,0.3); animation: pulse 1.5s ease-in-out infinite; }
+    .dot:nth-child(2) { animation-delay: 0.3s; }
+    .dot:nth-child(3) { animation-delay: 0.6s; }
+    @keyframes pulse { 0%,100% { opacity:0.3; transform:scale(1); } 50% { opacity:1; transform:scale(1.3); } }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <h1>MyApp</h1>
+    <p>A sample app deployed on GitHub Pages</p>
+    <span class="badge">Live on GitHub Pages</span>
+    <div class="dots"><div class="dot"></div><div class="dot"></div><div class="dot"></div></div>
+  </div>
+</body>
+</html>
